@@ -86,14 +86,19 @@ export const Banner = styled.div`
   }
 
   @media (max-width: 576px) {
-    height: calc(110vh);
     background-image: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 1) 20%,
-        rgba(0, 0, 0, 0.3841911764705882) 50%,
-        rgba(0, 0, 0, 1) 80%
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.7763480392156863) 40%,
+        rgba(0, 0, 0, 1) 70%
       ),
       url(${SojaIMG.src});
+
+    height: calc(100vh);
+  }
+
+  @media (max-width: 430px) {
+    height: calc(90vh);
   }
 `;
 
@@ -130,18 +135,6 @@ export const BannerPerson = styled.div`
   @media (max-width: 768px) {
     height: 445px;
     background-size: 70%;
-  }
-
-  @media (max-width: 576px) {
-    height: 410px;
-    background-size: 65%;
-    left: 7%;
-  }
-
-  @media (max-width: 430px) {
-    height: 410px;
-    background-size: 66%;
-    left: 0%;
   }
 `;
 
@@ -182,17 +175,18 @@ export const SectionBanner = styled.div`
     }
 
     @media (max-width: 576px) {
-      row-gap: 22px;
+      row-gap: 8px;
+      height: 50%;
+      justify-content: space-evenly;
     }
 
     @media (max-width: 430px) {
-      height: 46%;
+      height: 60%;
     }
   }
 
   @media (max-width: 576px) {
-    justify-content: flex-start;
-    padding-bottom: 20px;
+    justify-content: space-between;
   }
 
   .img-logo {
@@ -202,6 +196,11 @@ export const SectionBanner = styled.div`
     @media (max-width: 1024px) {
       width: 270px;
       height: 90px;
+    }
+
+    @media (max-width: 430px) {
+      width: 250px;
+      height: 70px;
     }
   }
 `;
@@ -247,6 +246,10 @@ export const Title = styled.span`
     font-size: 18px;
   }
 
+  @media (max-width: 430px) {
+    font-size: 16px;
+  }
+
   span {
     font-size: 42px;
     color: #008542;
@@ -259,6 +262,10 @@ export const Title = styled.span`
 
     @media (max-width: 576px) {
       font-size: 26px;
+    }
+
+    @media (max-width: 430px) {
+      font-size: 20px;
     }
   }
 `;
@@ -306,6 +313,13 @@ export const ButtonAction = styled.button`
     background-color: rgb(4, 164, 84);
     transition: 0.3s ease;
   }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+    height: 52px;
+    width: 94%;
+    margin-top: 8px;
+  }
 `;
 
 export const SectionDrone = styled.div`
@@ -332,13 +346,23 @@ export const SectionDrone = styled.div`
   }
 
   @media (max-width: 576px) {
-    left: 50%;
+    width: 100%;
+    left: 0;
+    height: 50%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  @media (max-width: 430px) {
-    top: 4%;
-    left: 42%;
+  @media (max-width: 576px) {
+    height: 40%;
   }
+
+  /* @media (max-width: 430px) {
+    top: 15%;
+    left: 10%;
+  } */
 
   .img-t50 {
     width: 520px;
@@ -360,13 +384,18 @@ export const SectionDrone = styled.div`
     }
 
     @media (max-width: 576px) {
-      width: 260px;
-      height: 100px;
+      width: 400px;
+      height: 200px;
+    }
+
+    @media (max-width: 500px) {
+      width: 360px;
+      height: 150px;
     }
 
     @media (max-width: 430px) {
-      width: 220px;
-      height: 80px;
+      width: 340px;
+      height: 140px;
     }
   }
 
@@ -380,7 +409,7 @@ export const SectionDrone = styled.div`
     animation: ${floatingMobile} 4s ease-in-out infinite;
   }
 
-  @media (max-width: 436px) {
+  @media (max-width: 430px) {
     animation: ${floatingMobileSmall} 3.5s ease-in-out infinite;
   }
 `;
@@ -396,6 +425,10 @@ export const SectionPerson = styled.div`
   @media (max-width: 1024px) {
     width: 100%;
     height: 57%;
+  }
+
+  @media (max-width: 576px) {
+    display: none;
   }
 `;
 
