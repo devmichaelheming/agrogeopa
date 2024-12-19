@@ -22,10 +22,10 @@ const floatingTablet = keyframes`
 
 const floatingMobile = keyframes`
   0%, 100% {
-    transform: translateY(-50px);
+    transform: translateY(-20px);
   }
   50% {
-    transform: translateY(-120px);
+    transform: translateY(40px);
   }
 `;
 
@@ -104,6 +104,17 @@ export const BannerPerson = styled.div`
     height: 470px;
     background-size: 75%;
   }
+
+  @media (max-width: 768px) {
+    height: 445px;
+    background-size: 70%;
+  }
+
+  @media (max-width: 576px) {
+    height: 409px;
+    background-size: 65%;
+    left: 7%;
+  }
 `;
 
 export const SectionBanner = styled.div`
@@ -149,7 +160,7 @@ export const SectionBanner = styled.div`
 
   @media (max-width: 576px) {
     justify-content: flex-start;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 
   .img-logo {
@@ -287,6 +298,16 @@ export const SectionDrone = styled.div`
     left: 62%;
   }
 
+  @media (max-width: 768px) {
+    top: 6%;
+    left: 62%;
+  }
+
+  @media (max-width: 576px) {
+    top: 10%;
+    left: 50%;
+  }
+
   .img-t50 {
     width: 520px;
     height: 250px;
@@ -299,6 +320,16 @@ export const SectionDrone = styled.div`
     @media (max-width: 1024px) {
       width: 340px;
       height: 140px;
+    }
+
+    @media (max-width: 768px) {
+      width: 260px;
+      height: 100px;
+    }
+
+    @media (max-width: 576px) {
+      width: 260px;
+      height: 100px;
     }
   }
 
