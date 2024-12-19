@@ -29,6 +29,15 @@ const floatingMobile = keyframes`
   }
 `;
 
+const floatingMobileSmall = keyframes`
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+`;
+
 export const Banner = styled.div`
   background-image: radial-gradient(
       circle,
@@ -66,10 +75,23 @@ export const Banner = styled.div`
     align-items: center;
 
     background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 43%,
-        rgba(0, 0, 0, 0.7399334733893557) 72%,
-        rgba(0, 98, 49, 0) 100%
+        180deg,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 0.6979166666666667) 30%,
+        rgba(0, 0, 0, 0.3841911764705882) 50%,
+        rgba(0, 0, 0, 0.7) 70%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url(${SojaIMG.src});
+  }
+
+  @media (max-width: 576px) {
+    height: calc(110vh);
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 0.3841911764705882) 50%,
+        rgba(0, 0, 0, 1) 80%
       ),
       url(${SojaIMG.src});
   }
@@ -111,9 +133,15 @@ export const BannerPerson = styled.div`
   }
 
   @media (max-width: 576px) {
-    height: 409px;
+    height: 410px;
     background-size: 65%;
     left: 7%;
+  }
+
+  @media (max-width: 430px) {
+    height: 410px;
+    background-size: 66%;
+    left: 0%;
   }
 `;
 
@@ -155,6 +183,10 @@ export const SectionBanner = styled.div`
 
     @media (max-width: 576px) {
       row-gap: 22px;
+    }
+
+    @media (max-width: 430px) {
+      height: 46%;
     }
   }
 
@@ -209,10 +241,6 @@ export const Title = styled.span`
     font-size: 22px;
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 768px) {
-    /* font-size: 22px; */
   }
 
   @media (max-width: 576px) {
@@ -304,8 +332,12 @@ export const SectionDrone = styled.div`
   }
 
   @media (max-width: 576px) {
-    top: 10%;
     left: 50%;
+  }
+
+  @media (max-width: 430px) {
+    top: 4%;
+    left: 42%;
   }
 
   .img-t50 {
@@ -331,6 +363,11 @@ export const SectionDrone = styled.div`
       width: 260px;
       height: 100px;
     }
+
+    @media (max-width: 430px) {
+      width: 220px;
+      height: 80px;
+    }
   }
 
   animation: ${floating} 5s ease-in-out infinite;
@@ -341,6 +378,10 @@ export const SectionDrone = styled.div`
 
   @media (max-width: 576px) {
     animation: ${floatingMobile} 4s ease-in-out infinite;
+  }
+
+  @media (max-width: 436px) {
+    animation: ${floatingMobileSmall} 3.5s ease-in-out infinite;
   }
 `;
 

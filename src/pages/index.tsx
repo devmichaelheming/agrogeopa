@@ -41,7 +41,7 @@ const pages: FC = (): ReactElement => {
       <Banner />
 
       <SectionCarousel>
-        <Carousel slides={slides} slidesToShow={5} interval={300000} />
+        <Carousel slides={slides} slidesToShow={5} interval={3000} />
       </SectionCarousel>
     </>
   );
