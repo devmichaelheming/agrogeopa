@@ -1,5 +1,3 @@
-import PersonIMG from "~/assets/images/person3.png";
-import SojaIMG from "~/assets/images/soja-web.jpg";
 import styled, { keyframes } from "styled-components";
 
 const floating = keyframes`
@@ -39,286 +37,14 @@ const floatingMobileSmall = keyframes`
 `;
 
 export const Banner = styled.div`
-  background-image: radial-gradient(
-      circle,
-      rgba(0, 0, 0, 0) 17%,
-      rgba(0, 0, 0, 0.7315301120448179) 34%,
-      rgba(0, 0, 0, 1) 66%
-    ),
-    url(${SojaIMG.src});
-
-  width: 100%;
-  height: calc(80vh);
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
-  @media (max-width: 1024px) {
-    align-items: center;
-
-    background-image: radial-gradient(
-        circle,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.7315301120448179) 34%,
-        rgba(0, 0, 0, 1) 76%
-      ),
-      url(${SojaIMG.src});
-    height: calc(100vh);
-  }
-
-  @media (max-width: 768px) {
-    align-items: center;
-
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 1) 10%,
-        rgba(0, 0, 0, 0.6979166666666667) 30%,
-        rgba(0, 0, 0, 0.3841911764705882) 50%,
-        rgba(0, 0, 0, 0.7) 70%,
-        rgba(0, 0, 0, 1) 100%
-      ),
-      url(${SojaIMG.src});
-  }
-
-  @media (max-width: 576px) {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.7763480392156863) 40%,
-        rgba(0, 0, 0, 1) 70%
-      ),
-      url(${SojaIMG.src});
-
-    height: calc(100vh);
-  }
-
-  @media (max-width: 430px) {
-    height: calc(90vh);
-  }
-`;
-
-export const BannerPerson = styled.div`
-  background-image: url(${PersonIMG.src});
-
-  width: 350px;
-  height: 720px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
-  position: absolute;
-  bottom: 0;
-
-  @media (max-width: 1600px) {
-    height: 700px;
-  }
-
-  @media (max-width: 1440px) {
-    height: 600px;
-  }
-
-  @media (max-width: 1024px) {
-    height: 470px;
-    background-size: 75%;
-  }
-
-  @media (max-width: 768px) {
-    height: 445px;
-    background-size: 70%;
-  }
-`;
-
-export const SectionBanner = styled.div`
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
+  width: 100%;
+  height: 100%;
 
-  @media (max-width: 1024px) {
-    flex-direction: column-reverse;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .descriptionAndLogo {
-    width: 80%;
-
-    @media (max-width: 1440px) {
-      width: 60%;
-    }
-
-    @media (max-width: 1280px) {
-      width: 40%;
-    }
-
-    @media (max-width: 1024px) {
-      width: 100%;
-      height: 40%;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-      row-gap: 8px;
-    }
-
-    @media (max-width: 576px) {
-      row-gap: 8px;
-      height: 50%;
-      justify-content: space-evenly;
-    }
-
-    @media (max-width: 430px) {
-      height: 60%;
-    }
-  }
-
-  @media (max-width: 576px) {
-    justify-content: space-between;
-  }
-
-  .img-logo {
-    width: 330px;
-    height: 150px;
-
-    @media (max-width: 1024px) {
-      width: 270px;
-      height: 90px;
-    }
-
-    @media (max-width: 430px) {
-      width: 250px;
-      height: 70px;
-    }
-  }
-`;
-
-export const SectionTitle = styled.div`
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 16px;
-
-  @media (max-width: 1600px) {
-    width: 80%;
-  }
-
-  @media (max-width: 1280px) {
-    width: 100%;
-  }
-
-  @media (max-width: 1024px) {
-    align-items: center;
-    width: 100%;
-  }
-`;
-
-export const Title = styled.span`
-  font-size: 32px;
-  color: #fff;
-  font-weight: 600;
-
-  @media (max-width: 1024px) {
-    text-align: center;
-  }
-
-  @media (max-width: 1280px) {
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (max-width: 576px) {
-    font-size: 18px;
-  }
-
-  @media (max-width: 430px) {
-    font-size: 16px;
-  }
-
-  span {
-    font-size: 42px;
-    color: #008542;
-    font-weight: 700;
-
-    @media (max-width: 1280px) {
-      width: 100%;
-      font-size: 32px;
-    }
-
-    @media (max-width: 576px) {
-      font-size: 26px;
-    }
-
-    @media (max-width: 430px) {
-      font-size: 20px;
-    }
-  }
-`;
-
-export const SubTitle = styled.div`
-  font-size: 18px;
-  color: #fff;
-  font-weight: 400;
-
-  flex-direction: column;
-  display: flex;
-  row-gap: 8px;
-
-  @media (max-width: 1280px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 1024px) {
-    text-align: center;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 576px) {
-    font-size: 12px;
-  }
-`;
-
-export const ButtonAction = styled.button`
-  border: none;
-  background-color: rgb(2, 100, 51);
-  padding: 12px 22px;
-  height: 64px;
-  width: 360px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 18px;
-  transition: 0.3s ease;
-
-  &:hover {
-    transform: translateX(20px);
-    background-color: rgb(4, 164, 84);
-    transition: 0.3s ease;
-  }
-
-  @media (max-width: 576px) {
-    font-size: 12px;
-    height: 52px;
-    width: 94%;
-    margin-top: 8px;
+  .img-banner {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
@@ -336,8 +62,8 @@ export const SectionDrone = styled.div`
   }
 
   @media (max-width: 1024px) {
-    top: 10%;
-    left: 62%;
+    top: 20%;
+    left: 42%;
   }
 
   @media (max-width: 768px) {
@@ -358,11 +84,6 @@ export const SectionDrone = styled.div`
   @media (max-width: 576px) {
     height: 40%;
   }
-
-  /* @media (max-width: 430px) {
-    top: 15%;
-    left: 10%;
-  } */
 
   .img-t50 {
     width: 520px;
@@ -414,32 +135,90 @@ export const SectionDrone = styled.div`
   }
 `;
 
-export const SectionPerson = styled.div`
-  width: 20%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+export const ButtonWrapper = styled.div`
+  position: absolute;
+  bottom: 7vh;
+  left: 21vh;
+  transform: translateX(-50%);
 
-  @media (max-width: 1024px) {
-    width: 100%;
-    height: 57%;
+  @media (max-width: 1920px) {
+    left: 28vh;
   }
 
-  @media (max-width: 576px) {
-    display: none;
+  @media (max-width: 1600px) {
+    bottom: 5vh;
+  }
+
+  @media (max-width: 1440px) {
+    bottom: 4vh;
+    left: 24vh;
+  }
+
+  @media (max-width: 1280px) {
+    left: 23vh;
+    bottom: 3vh;
+  }
+
+  @media (max-width: 1024px) {
+    left: 21vh;
+    bottom: 2vh;
   }
 `;
 
+export const ButtonAction = styled.button`
+  border: none;
+  background-color: rgb(2, 100, 51);
+  padding: 1rem 3rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: translateX(20px);
+    background-color: rgb(4, 164, 84);
+    transition: 0.3s ease;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: 0.8rem;
+    padding: 1rem 3rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+    /* height: 52px;
+    width: 94%; */
+    margin-top: 8px;
+  }
+`;
+
+// Botão Estilizado
+// export const ButtonAction = styled.button`
+//   border: none;
+//   background-color: rgb(2, 100, 51);
+//   color: #fff;
+//   border-radius: 8px;
+//   cursor: pointer;
+//   transition: 0.3s ease;
+
+//   font-size: 1rem; /* Tamanho do texto proporcional */
+//   padding: 1rem 3rem; /* Padding proporcional */
+
+//   &:hover {
+//     transform: translateY(-5px);
+//     background-color: rgb(4, 164, 84);
+//   }
+
+//   @media (max-width: 576px) {
+//     font-size: calc(0.9rem + 0.3vw);
+//   }
+// `;
+
 export default {
   Banner,
-  BannerPerson,
-  SectionBanner,
-  SectionTitle,
-  Title,
-  SubTitle,
-  ButtonAction,
   SectionDrone,
-  SectionPerson,
+  ButtonWrapper,
+  ButtonAction,
 };
