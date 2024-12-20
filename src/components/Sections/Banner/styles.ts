@@ -94,6 +94,10 @@ export const SectionDrone = styled.div`
     justify-content: center;
   }
 
+  @media (max-width: 430px) {
+    top: 34px;
+  }
+
   .img-t50 {
     width: 520px;
     height: 250px;

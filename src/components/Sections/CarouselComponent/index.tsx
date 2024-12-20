@@ -1,5 +1,5 @@
-import AssistanceIMG from "~/assets/images/assistance2.png";
-import SuportIMG from "~/assets/images/suport2.png";
+import AssistanceIMG from "~/assets/images/assistance.png";
+import SuportIMG from "~/assets/images/suport.png";
 import T25IMG from "~/assets/images/T25.png";
 import T50IMG from "~/assets/images/T50.png";
 import React, { FC, ReactElement } from "react";
@@ -58,7 +58,7 @@ const CarouselComponent: FC = (): ReactElement => {
         grabCursor={true}
         loop
         breakpoints={{
-          400: {
+          375: {
             slidesPerView: 1,
             spaceBetween: 4,
           },

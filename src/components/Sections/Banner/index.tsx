@@ -6,10 +6,6 @@ import React, { FC, ReactElement } from "react";
 
 import S from "./styles";
 
-// AJUSTAR O LEFT DO DRONE NA RESOLUÇÃO DE NOTEBOOK
-// CRIAR IMAGEM PARA A VERSÃO TABLE / MOBILE PARA BAIXO(A PARTIR DE 800PX DA RESOLUÇÃO)
-// ADICIONAR COMPORTAMENTO PARA DESLIZAR O CAROUSEL, USUARIO TER INTERAÇÃO
-
 const Banner: FC = (): ReactElement => {
   return (
     <S.Banner id="home">
@@ -20,6 +16,7 @@ const Banner: FC = (): ReactElement => {
         loading="lazy"
         className="img-banner"
         unoptimized
+        priority
       />
 
       <Image
@@ -28,6 +25,7 @@ const Banner: FC = (): ReactElement => {
         quality={100}
         loading="lazy"
         className="img-banner-mobile"
+        priority
         unoptimized
       />
 
@@ -38,6 +36,7 @@ const Banner: FC = (): ReactElement => {
           quality={100}
           loading="lazy"
           className="img-t50"
+          priority
           unoptimized
         />
       </S.SectionDrone>

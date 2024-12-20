@@ -25,6 +25,10 @@ const Card = styled.div`
   @media (max-width: 575px) {
     height: 400px;
   }
+
+  @media (max-width: 390px) {
+    height: 350px;
+  }
 `;
 
 const StyledImage = styled(Image)`
