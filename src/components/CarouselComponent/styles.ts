@@ -21,10 +21,10 @@ const Card = styled.div`
     height: 380px;
   }
 
-  &:hover {
+  /* &:hover {
     background-color: #3a4147;
     color: #fff;
-  }
+  } */
 `;
 
 const StyledImage = styled(Image)`
