@@ -4,6 +4,7 @@ import T25 from "~/assets/images/T25.png";
 import T50 from "~/assets/images/T50.png";
 import Carousel from "~/components/Carousel";
 import { SlideItem } from "~/components/Carousel/types";
+import CarouselComponent from "~/components/CarouselComponent";
 import Banner from "~/components/Sections/Banner";
 import { SectionCarousel } from "~/styles/styles";
 import React, { FC, ReactElement } from "react";
@@ -40,9 +41,10 @@ const pages: FC = (): ReactElement => {
     <>
       <Banner />
 
-      <SectionCarousel>
+      <CarouselComponent />
+      {/* <SectionCarousel>
         <Carousel slides={slides} slidesToShow={5} interval={3000} />
-      </SectionCarousel>
+      </SectionCarousel> */}
     </>
   );
 };

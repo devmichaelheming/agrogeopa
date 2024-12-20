@@ -46,6 +46,24 @@ export const Banner = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  .img-banner-mobile {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  @media (max-width: 800px) {
+    .img-banner {
+      display: none;
+    }
+
+    .img-banner-mobile {
+      display: block;
+      width: 100%;
+    }
+  }
 `;
 
 export const SectionDrone = styled.div`
@@ -54,7 +72,7 @@ export const SectionDrone = styled.div`
   left: 45%;
 
   @media (max-width: 1600px) {
-    left: 44%;
+    left: 42%;
   }
 
   @media (max-width: 1280px) {
@@ -66,18 +84,13 @@ export const SectionDrone = styled.div`
     left: 42%;
   }
 
-  @media (max-width: 768px) {
-    top: 6%;
-    left: 62%;
-  }
-
-  @media (max-width: 576px) {
+  @media (max-width: 800px) {
     width: 100%;
     left: 0;
     height: 50%;
-    top: 0;
+    top: 40px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 
@@ -106,24 +119,24 @@ export const SectionDrone = styled.div`
       height: 140px;
     }
 
-    @media (max-width: 768px) {
-      width: 260px;
-      height: 100px;
+    @media (max-width: 800px) {
+      width: 480px;
+      height: 220px;
     }
 
     @media (max-width: 576px) {
-      width: 400px;
-      height: 200px;
+      width: 340px;
+      height: 160px;
     }
 
     @media (max-width: 500px) {
-      width: 360px;
-      height: 150px;
+      width: 340px;
+      height: 160px;
     }
 
     @media (max-width: 430px) {
-      width: 340px;
-      height: 140px;
+      width: 280px;
+      height: 130px;
     }
   }
 
@@ -134,7 +147,7 @@ export const SectionDrone = styled.div`
   }
 
   @media (max-width: 576px) {
-    animation: ${floatingMobile} 4s ease-in-out infinite;
+    animation: ${floatingMobile} 5s ease-in-out infinite;
   }
 
   @media (max-width: 430px) {
@@ -170,6 +183,16 @@ export const ButtonWrapper = styled.div`
     left: 21vh;
     bottom: 2vh;
   }
+
+  @media (max-width: 800px) {
+    left: 50%;
+    bottom: 20%;
+  }
+
+  @media (max-width: 576px) {
+    left: 50%;
+    bottom: 19%;
+  }
 `;
 
 export const ButtonAction = styled.button`
@@ -193,35 +216,25 @@ export const ButtonAction = styled.button`
     padding: 1rem 3rem;
   }
 
+  @media (max-width: 800px) {
+    font-size: 1rem;
+    padding: 1rem 5rem;
+  }
+
   @media (max-width: 576px) {
-    font-size: 12px;
-    /* height: 52px;
-    width: 94%; */
-    margin-top: 8px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0.8rem 5rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 430px) {
+    padding: 0.6rem 4rem;
+    font-size: 0.8rem;
   }
 `;
-
-// Botão Estilizado
-// export const ButtonAction = styled.button`
-//   border: none;
-//   background-color: rgb(2, 100, 51);
-//   color: #fff;
-//   border-radius: 8px;
-//   cursor: pointer;
-//   transition: 0.3s ease;
-
-//   font-size: 1rem; /* Tamanho do texto proporcional */
-//   padding: 1rem 3rem; /* Padding proporcional */
-
-//   &:hover {
-//     transform: translateY(-5px);
-//     background-color: rgb(4, 164, 84);
-//   }
-
-//   @media (max-width: 576px) {
-//     font-size: calc(0.9rem + 0.3vw);
-//   }
-// `;
 
 export default {
   Banner,

@@ -60,3 +60,7 @@ strong {
   min-height: 100px;
   background-color: green;
 }
+
+.swiper-button-prev, .swiper-button-next {
+  color: #ffffffcc!important;
+}

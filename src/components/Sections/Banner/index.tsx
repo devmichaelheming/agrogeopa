@@ -1,4 +1,5 @@
-import BannerIMG from "~/assets/images/banner-full3.png";
+import BannerIMG from "~/assets/images/banner-full.png";
+import BannerMobileIMG from "~/assets/images/banner-mobile.png";
 import T50 from "~/assets/images/T50.png";
 import Image from "next/image";
 import React, { FC, ReactElement } from "react";
@@ -18,6 +19,15 @@ const Banner: FC = (): ReactElement => {
         quality={100}
         loading="lazy"
         className="img-banner"
+        unoptimized
+      />
+
+      <Image
+        src={BannerMobileIMG}
+        alt="logo"
+        quality={100}
+        loading="lazy"
+        className="img-banner-mobile"
         unoptimized
       />
 
