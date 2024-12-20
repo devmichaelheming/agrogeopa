@@ -41,21 +41,35 @@ export const Banner = styled.div`
   width: 100%;
   height: 100%;
 
-  .img-banner {
+  .img-banner,
+  .img-banner-tablet,
+  .img-banner-mobile {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
+  .img-banner-tablet {
+    display: none;
+  }
+
   .img-banner-mobile {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: none;
   }
 
   @media (max-width: 800px) {
     .img-banner {
+      display: none;
+    }
+
+    .img-banner-tablet {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .img-banner-tablet {
       display: none;
     }
 
@@ -195,7 +209,7 @@ export const ButtonWrapper = styled.div`
 
   @media (max-width: 576px) {
     left: 50%;
-    bottom: 19%;
+    bottom: 2%;
   }
 `;
 
@@ -222,7 +236,8 @@ export const ButtonAction = styled.button`
 
   @media (max-width: 800px) {
     font-size: 1rem;
-    padding: 1rem 5rem;
+    width: 300px;
+    padding: 12px;
   }
 
   @media (max-width: 576px) {
@@ -230,12 +245,10 @@ export const ButtonAction = styled.button`
   }
 
   @media (max-width: 500px) {
-    padding: 0.8rem 5rem;
     font-size: 0.8rem;
   }
 
   @media (max-width: 430px) {
-    padding: 0.6rem 4rem;
     font-size: 0.8rem;
   }
 `;

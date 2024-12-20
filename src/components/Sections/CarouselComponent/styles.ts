@@ -22,6 +22,10 @@ const Card = styled.div`
     height: 380px;
   }
 
+  @media (max-width: 576px) {
+    height: 275px;
+  }
+
   @media (max-width: 575px) {
     height: 400px;
   }

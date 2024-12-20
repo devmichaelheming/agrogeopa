@@ -1,5 +1,6 @@
 import BannerIMG from "~/assets/images/banner-full.png";
 import BannerMobileIMG from "~/assets/images/banner-mobile.png";
+import BannerTabletIMG from "~/assets/images/banner-tablet.png";
 import T50 from "~/assets/images/T50.png";
 import Image from "next/image";
 import React, { FC, ReactElement } from "react";
@@ -16,7 +17,15 @@ const Banner: FC = (): ReactElement => {
         loading="lazy"
         className="img-banner"
         unoptimized
-        priority
+      />
+
+      <Image
+        src={BannerTabletIMG}
+        alt="logo"
+        quality={100}
+        loading="lazy"
+        className="img-banner-tablet"
+        unoptimized
       />
 
       <Image
@@ -25,7 +34,6 @@ const Banner: FC = (): ReactElement => {
         quality={100}
         loading="lazy"
         className="img-banner-mobile"
-        priority
         unoptimized
       />
 
@@ -36,7 +44,6 @@ const Banner: FC = (): ReactElement => {
           quality={100}
           loading="lazy"
           className="img-t50"
-          priority
           unoptimized
         />
       </S.SectionDrone>
