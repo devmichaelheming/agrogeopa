@@ -1,9 +1,10 @@
-import Image, { StaticImageData } from "next/image";
-import styled, { css } from "styled-components";
+import Image from "next/image";
+import styled from "styled-components";
 
 const CarouselContainer = styled.div`
   margin: 0 auto;
   width: 96%;
+  padding-bottom: 20px;
 `;
 
 const Card = styled.div`
@@ -21,10 +22,9 @@ const Card = styled.div`
     height: 380px;
   }
 
-  /* &:hover {
-    background-color: #3a4147;
-    color: #fff;
-  } */
+  @media (max-width: 575px) {
+    height: 400px;
+  }
 `;
 
 const StyledImage = styled(Image)`
@@ -102,7 +102,12 @@ const SlideTitleBrand = styled.div`
   color: #fff;
   font-size: 38px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 30px;
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 22px;
+  }
 `;
 
 const SlideTitleModel = styled.div`
@@ -110,6 +115,10 @@ const SlideTitleModel = styled.div`
   font-size: 26px;
   font-weight: 600;
   line-height: 28px;
+
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
 `;
 
 const SectionModel = styled.div`
@@ -124,6 +133,10 @@ const SlideTitleModelEmphasis = styled.div`
   font-size: 52px;
   font-weight: 700;
   line-height: 28px;
+
+  @media (max-width: 1024px) {
+    font-size: 42px;
+  }
 `;
 
 export default {
