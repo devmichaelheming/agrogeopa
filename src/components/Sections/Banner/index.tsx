@@ -5,6 +5,10 @@ import React, { FC, ReactElement } from "react";
 
 import S from "./styles";
 
+// AJUSTAR O LEFT DO DRONE NA RESOLUÇÃO DE NOTEBOOK
+// CRIAR IMAGEM PARA A VERSÃO TABLE / MOBILE PARA BAIXO(A PARTIR DE 800PX DA RESOLUÇÃO)
+// ADICIONAR COMPORTAMENTO PARA DESLIZAR O CAROUSEL, USUARIO TER INTERAÇÃO
+
 const Banner: FC = (): ReactElement => {
   return (
     <S.Banner id="home">

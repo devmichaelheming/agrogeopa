@@ -53,8 +53,8 @@ export const SectionDrone = styled.div`
   top: 20%;
   left: 45%;
 
-  @media (max-width: 1440px) {
-    left: 48%;
+  @media (max-width: 1600px) {
+    left: 44%;
   }
 
   @media (max-width: 1280px) {
@@ -81,17 +81,24 @@ export const SectionDrone = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 576px) {
-    height: 40%;
-  }
-
   .img-t50 {
     width: 520px;
     height: 250px;
+    object-fit: cover;
+
+    @media (max-width: 1600px) {
+      width: 480px;
+      height: 220px;
+    }
 
     @media (max-width: 1440px) {
-      width: 360px;
-      height: 150px;
+      width: 420px;
+      height: 200px;
+    }
+
+    @media (max-width: 1280px) {
+      width: 380px;
+      height: 180px;
     }
 
     @media (max-width: 1024px) {

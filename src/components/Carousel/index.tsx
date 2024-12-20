@@ -74,7 +74,7 @@ const Carousel: React.FC<CarouselProps> = ({
             key={index}
             width={slideWidth}
             ref={ref}
-            bgImage={slide.bgImage || false}
+            bgimage={slide.bgImage || false}
             src={slide.src}
           >
             {!slide.bgImage && (

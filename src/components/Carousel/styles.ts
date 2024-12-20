@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 const Slide = styled.div<{
   width: number;
-  bgImage: boolean;
+  bgimage: boolean;
   src: StaticImageData;
 }>`
   flex: 0 0 ${(props) => props.width}%;
@@ -27,8 +27,8 @@ const Slide = styled.div<{
   border: 4px solid rgb(2, 43, 23);
   position: relative;
 
-  ${({ bgImage, src }) =>
-    bgImage &&
+  ${({ bgimage, src }) =>
+    bgimage &&
     css`
       background-image: url(${src.src});
 
