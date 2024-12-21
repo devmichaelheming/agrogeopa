@@ -3,12 +3,19 @@ import SuportIMG from "~/assets/images/suport.png";
 import T25IMG from "~/assets/images/T25.png";
 import T50IMG from "~/assets/images/T50.png";
 import React, { FC, ReactElement } from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 import S from "./styles";
 import { SlideItem } from "./types";
@@ -48,12 +55,15 @@ const CarouselComponent: FC = (): ReactElement => {
   return (
     <S.CarouselContainer>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={8}
         slidesPerView={4}
         navigation
         pagination={{ clickable: true }}
-        autoplay
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         scrollbar={{ draggable: true }}
         grabCursor={true}
         loop

@@ -3,6 +3,7 @@ import BannerMobileIMG from "~/assets/images/banner-mobile.png";
 import BannerTabletIMG from "~/assets/images/banner-tablet.png";
 import T50 from "~/assets/images/T50.png";
 import Image from "next/image";
+import Link from "next/link";
 import React, { FC, ReactElement } from "react";
 
 import S from "./styles";
@@ -49,7 +50,12 @@ const Banner: FC = (): ReactElement => {
       </S.SectionDrone>
 
       <S.ButtonWrapper>
-        <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
+        <Link
+          passHref
+          href="https://wa.me/5566997177126?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20drones..."
+        >
+          <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
+        </Link>
       </S.ButtonWrapper>
     </S.Banner>
   );
