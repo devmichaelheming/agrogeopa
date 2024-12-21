@@ -116,6 +116,11 @@ const SlideTitleBrand = styled.div`
     font-size: 28px;
     line-height: 22px;
   }
+
+  @media (max-width: 576px) {
+    font-size: 26px;
+    line-height: 20px;
+  }
 `;
 
 const SlideTitleModel = styled.div`
@@ -126,6 +131,10 @@ const SlideTitleModel = styled.div`
 
   @media (max-width: 1024px) {
     font-size: 22px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
   }
 `;
 
@@ -144,6 +153,10 @@ const SlideTitleModelEmphasis = styled.div`
 
   @media (max-width: 1024px) {
     font-size: 42px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 38px;
   }
 `;
 

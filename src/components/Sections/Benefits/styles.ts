@@ -16,6 +16,12 @@ export const Container = styled.div`
   @media (max-width: 800px) {
     width: 96%;
   }
+
+  @media (max-width: 576px) {
+    a {
+      width: 90%;
+    }
+  }
 `;
 
 export const Title = styled.div`
@@ -60,6 +66,10 @@ export const ButtonAction = styled.button`
   font-size: 1rem;
   transition: 0.3s ease;
   margin-top: 40px;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 
   &:hover {
     transform: translateY(-10px);

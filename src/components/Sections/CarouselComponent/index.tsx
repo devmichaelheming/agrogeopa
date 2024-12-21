@@ -68,7 +68,7 @@ const CarouselComponent: FC = (): ReactElement => {
         grabCursor={true}
         loop
         breakpoints={{
-          375: {
+          200: {
             slidesPerView: 1,
             spaceBetween: 4,
           },
