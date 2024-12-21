@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 280px;
-  min-height: 130px;
+  min-height: 230px;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
   position: relative;
   cursor: pointer;
@@ -14,6 +14,7 @@ export const Container = styled.div`
 
   @media (max-width: 1024px) {
     width: 240px;
+    min-height: 180px;
   }
 
   @media (max-width: 576px) {
@@ -50,7 +51,7 @@ export const Title = styled.div`
   width: 100%;
 
   @media (max-width: 1024px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media (max-width: 576px) {
@@ -80,8 +81,37 @@ export const SectionIcone = styled.div`
   }
 `;
 
+export const TitleIcon = styled.div`
+  color: rgb(53, 53, 53);
+  background-color: rgb(33, 165, 99);
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
+    padding: 16px;
+  }
+
+  @media (max-width: 576px) {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    padding: 16px;
+  }
+`;
+
 export default {
   Container,
   Title,
   SectionIcone,
+  TitleIcon,
 };

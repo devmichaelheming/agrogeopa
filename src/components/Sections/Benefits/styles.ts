@@ -65,7 +65,7 @@ export const ButtonAction = styled.button`
   border-radius: 8px;
   font-size: 1rem;
   transition: 0.3s ease;
-  margin-top: 40px;
+  margin: 40px 0;
 
   @media (max-width: 576px) {
     width: 100%;

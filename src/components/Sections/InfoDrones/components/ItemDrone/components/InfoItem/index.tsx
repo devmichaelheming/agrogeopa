@@ -7,16 +7,20 @@ import { InfoItemProps } from "./types";
 const InfoItem: FC<InfoItemProps> = ({ icon, title }): ReactElement => {
   return (
     <S.Container>
-      <Image
-        src={icon}
-        alt="logo"
-        height={64}
-        width={64}
-        quality={100}
-        loading="lazy"
-        className="img-item"
-        unoptimized
-      />
+      {typeof icon === "string" ? (
+        <S.TitleIcon>{icon}</S.TitleIcon>
+      ) : (
+        <Image
+          src={icon}
+          alt="logo"
+          height={64}
+          width={64}
+          quality={100}
+          loading="lazy"
+          className="img-item"
+          unoptimized
+        />
+      )}
       <S.Title>{title}</S.Title>
     </S.Container>
   );

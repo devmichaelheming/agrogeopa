@@ -14,12 +14,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
 `;
 
 export const SectionDrone = styled.div`
-  border-top-right-radius: 48px;
-  border-top-left-radius: 48px;
+  /* border-top-right-radius: 48px;
+  border-top-left-radius: 48px; */
   background: rgb(0, 133, 66);
   background: linear-gradient(180deg, rgba(0, 133, 66, 1) 34%, #000 30%);
   width: 100%;
@@ -73,8 +72,6 @@ export const SectionInformation = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 48px;
-  border-bottom-right-radius: 48px;
 
   @media (max-width: 576px) {
     min-height: 440px;
@@ -147,14 +144,14 @@ export const SectionInfoItens = styled.div`
     width: 80%;
   }
 
+  @media (max-width: 1024px) {
+    width: 96%;
+    padding: 40px 0;
+  }
+
   @media (max-width: 800px) {
     row-gap: 34px;
     column-gap: 24px;
-    width: 96%;
-  }
-
-  @media (max-width: 576px) {
-    padding: 40px 0;
   }
 
   .motion-div {
