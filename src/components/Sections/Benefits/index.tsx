@@ -8,13 +8,17 @@ import {
 } from "@ant-design/icons";
 import arrowAnimationData from "~/assets/animated/down.json";
 import { motion, useInView } from "motion/react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import React, { FC, ReactElement, useRef } from "react"; // Importando o componente Lottie
-import Lottie from "react-lottie";
+import React, { FC, ReactElement, useRef } from "react";
 
 import CardItem from "./components/CardItem";
 import { CardItemProps } from "./components/CardItem/types";
 import S from "./styles";
+
+const LottieComponent = dynamic(() => import("react-lottie"), {
+  ssr: false,
+});
 
 const dataItensBenefits: Array<CardItemProps> = [
   {
@@ -70,7 +74,7 @@ const Benefits: FC = (): ReactElement => {
 
   return (
     <S.Container>
-      <Lottie
+      <LottieComponent
         options={defaultOptions}
         height={60}
         width={60}
