@@ -17,6 +17,7 @@ const Card = styled.div`
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 
   @media (max-width: 1024px) {
     height: 380px;
@@ -86,7 +87,7 @@ const CustomNextButton = styled.div`
   transition: color 0.3s;
 
   &:hover {
-    color: #ff7f50; /* Cor da seta ao passar o mouse */
+    color: #ff7f50;
   }
 `;
 

@@ -7,6 +7,7 @@ import {
   SafetyOutlined,
 } from "@ant-design/icons";
 import arrowAnimationData from "~/assets/animated/down.json";
+import { messageWhatsapp } from "~/lib/constants";
 import { motion, useInView } from "motion/react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -101,10 +102,7 @@ const Benefits: FC = (): ReactElement => {
         ))}
       </S.SectionCards>
 
-      <Link
-        passHref
-        href="https://wa.me/5566997177126?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20os%20drones..."
-      >
+      <Link passHref href={messageWhatsapp} target="_blank">
         <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
       </Link>
     </S.Container>
