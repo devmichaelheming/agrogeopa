@@ -16,7 +16,7 @@ const InfoItem: FC<InfoItemProps> = ({ icon, title }): ReactElement => {
           height={64}
           width={64}
           quality={100}
-          loading="lazy"
+          priority
           className="img-item"
           unoptimized
         />

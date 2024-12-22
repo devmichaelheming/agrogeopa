@@ -1,8 +1,4 @@
-import {
-  EnvironmentOutlined,
-  MailOutlined,
-  PhoneOutlined,
-} from "@ant-design/icons";
+import { EnvironmentOutlined, PhoneOutlined } from "@ant-design/icons";
 import React, { FC, ReactElement } from "react";
 
 import S from "./styles";
@@ -33,15 +29,7 @@ const Footer: FC = (): ReactElement => {
               <PhoneOutlined />
               <S.ItemContent>
                 <S.TextSectionTwo>Segunda a Sexta</S.TextSectionTwo>
-                <span>8:00h as 12:00h e 14:00h as 18:00h</span>
-              </S.ItemContent>
-            </S.ItemSection>
-
-            <S.ItemSection>
-              <PhoneOutlined />
-              <S.ItemContent>
-                <S.TextSectionTwo>Sábado</S.TextSectionTwo>
-                <span>8:00h as 12:00h</span>
+                <span>7:30h as 11:30h e 13:30h as 17:30h</span>
               </S.ItemContent>
             </S.ItemSection>
           </S.SectionContent>
@@ -60,15 +48,6 @@ const Footer: FC = (): ReactElement => {
                   R. do Cachimbo, 228 - Jardim Planalto, Novo Progresso - PA,
                   68193-000
                 </span>
-              </S.ItemContent>
-            </S.ItemSection>
-
-            <S.ItemSection>
-              <MailOutlined />
-              <S.ItemContent>
-                <S.TextSectionTwo>E-Mail</S.TextSectionTwo>
-
-                <span>agrogeonp@gmail.com</span>
               </S.ItemContent>
             </S.ItemSection>
 

@@ -4,7 +4,7 @@ import ptBR from "antd/lib/locale/pt_BR";
 import type { AppProps } from "next/app";
 import { ReactElement } from "react";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
-import "primereact/resources/primereact.min.css"; // Estilos principais
+import "primereact/resources/primereact.min.css";
 import "antd/dist/antd.css";
 import "../styles/index.css";
 
