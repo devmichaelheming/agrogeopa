@@ -9,11 +9,15 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1600px) {
     width: 80%;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1280px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1024px) {
     width: 96%;
   }
 
@@ -41,14 +45,18 @@ export const SectionCards = styled.div`
   row-gap: 44px;
   column-gap: 34px;
 
-  @media (max-width: 800px) {
-    row-gap: 34px;
+  @media (max-width: 1024px) {
+    row-gap: 44px;
     column-gap: 24px;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 800px) {
     row-gap: 44px;
+    column-gap: 0px;
+    justify-content: space-evenly;
+  }
 
+  @media (max-width: 576px) {
     .motion-div {
       width: 100%;
     }

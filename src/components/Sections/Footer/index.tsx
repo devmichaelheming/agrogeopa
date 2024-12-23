@@ -1,4 +1,9 @@
-import { EnvironmentOutlined, PhoneOutlined } from "@ant-design/icons";
+import {
+  EnvironmentOutlined,
+  InstagramOutlined,
+  PhoneOutlined,
+} from "@ant-design/icons";
+import Link from "next/link";
 import React, { FC, ReactElement } from "react";
 
 import S from "./styles";
@@ -11,13 +16,13 @@ const Footer: FC = (): ReactElement => {
       <S.WrapperFooter>
         <S.SectionOne>
           <S.TitleSectionOne>
-            Maximize sua produção com a AGRASPRO,
+            Maximize sua produção com a AGRO GEO,
             <span> e vença todos os desafios do campo.</span>
           </S.TitleSectionOne>
 
           <S.DescriptionSectionOne>
             Adquira já o seu com a melhor forma de pagamento e o melhor suporte
-            do Mato Grosso.
+            para o Mato Grosso.
           </S.DescriptionSectionOne>
         </S.SectionOne>
 
@@ -45,8 +50,8 @@ const Footer: FC = (): ReactElement => {
                 <S.TextSectionTwo>Endereço</S.TextSectionTwo>
 
                 <span>
-                  R. do Cachimbo, 228 - Jardim Planalto, Novo Progresso - PA,
-                  68193-000
+                  R. Santos Dumont com R. Monte Castelo, 120, Novo Progresso -
+                  PA, 68193-000
                 </span>
               </S.ItemContent>
             </S.ItemSection>
@@ -56,8 +61,21 @@ const Footer: FC = (): ReactElement => {
               <S.ItemContent>
                 <S.TextSectionTwo>Telefone</S.TextSectionTwo>
 
-                <span>(93) 98414-4452</span>
+                <span>(93) 98408-3831</span>
               </S.ItemContent>
+            </S.ItemSection>
+
+            <S.ItemSection>
+              <Link
+                passHref
+                href="https://www.instagram.com/agrogeodrones"
+                target="_blank"
+              >
+                <InstagramOutlined />
+                <S.ItemContent>
+                  <S.TextSectionTwo>Instagram</S.TextSectionTwo>
+                </S.ItemContent>
+              </Link>
             </S.ItemSection>
           </S.SectionContent>
         </S.SectionThree>

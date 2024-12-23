@@ -17,8 +17,6 @@ export const Container = styled.div`
 `;
 
 export const SectionDrone = styled.div`
-  /* border-top-right-radius: 48px;
-  border-top-left-radius: 48px; */
   background: rgb(0, 133, 66);
   background: linear-gradient(180deg, rgba(0, 133, 66, 1) 34%, #000 30%);
   width: 100%;
@@ -139,6 +137,7 @@ export const SectionInfoItens = styled.div`
   justify-content: center;
   row-gap: 44px;
   column-gap: 34px;
+  padding: 80px 0 40px 0;
 
   @media (max-width: 1280px) {
     width: 80%;
@@ -146,7 +145,6 @@ export const SectionInfoItens = styled.div`
 
   @media (max-width: 1024px) {
     width: 96%;
-    padding: 40px 0;
   }
 
   @media (max-width: 800px) {

@@ -176,29 +176,30 @@ export const SectionDrone = styled.div`
 export const ButtonWrapper = styled.div`
   position: absolute;
   bottom: 7vh;
-  left: 21vh;
+  left: 34vh;
   transform: translateX(-50%);
 
   @media (max-width: 1920px) {
-    left: 28vh;
+    left: 38vh;
   }
 
   @media (max-width: 1600px) {
-    bottom: 5vh;
+    bottom: 4vh;
+    left: 34vh;
   }
 
   @media (max-width: 1440px) {
-    bottom: 4vh;
-    left: 24vh;
+    bottom: 3vh;
+    left: 30vh;
   }
 
   @media (max-width: 1280px) {
-    left: 23vh;
-    bottom: 3vh;
+    left: 28vh;
+    bottom: 2vh;
   }
 
   @media (max-width: 1024px) {
-    left: 21vh;
+    left: 22vh;
     bottom: 2vh;
   }
 
@@ -232,6 +233,11 @@ export const ButtonAction = styled.button`
   @media (max-width: 1440px) {
     font-size: 0.8rem;
     padding: 1rem 3rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 0.7rem;
+    padding: 0.8rem 3rem;
   }
 
   @media (max-width: 800px) {

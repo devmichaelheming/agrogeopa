@@ -110,10 +110,17 @@ export const SectionContent = styled.div`
 `;
 
 export const ItemSection = styled.div`
+  width: 100%;
   align-items: center;
   display: flex;
   justify-content: flex-start;
   column-gap: 16px;
+
+  a {
+    width: 100%;
+    display: flex;
+    column-gap: 16px;
+  }
 
   svg {
     font-size: 28px;
