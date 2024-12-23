@@ -19,7 +19,7 @@ const ItemDrone: FC<ItemDroneProps> = ({ data }): ReactElement => {
           src={data.src}
           alt="logo"
           quality={100}
-          priority
+          loading="eager"
           className="img-logo"
           unoptimized
         />

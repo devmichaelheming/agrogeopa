@@ -16,7 +16,7 @@ const Banner: FC = (): ReactElement => {
         src={BannerIMG}
         alt="logo"
         quality={100}
-        priority
+        loading="eager"
         className="img-banner"
         unoptimized
       />
@@ -25,7 +25,7 @@ const Banner: FC = (): ReactElement => {
         src={BannerTabletIMG}
         alt="logo"
         quality={100}
-        priority
+        loading="eager"
         className="img-banner-tablet"
         unoptimized
       />
@@ -34,7 +34,7 @@ const Banner: FC = (): ReactElement => {
         src={BannerMobileIMG}
         alt="logo"
         quality={100}
-        priority
+        loading="eager"
         className="img-banner-mobile"
         unoptimized
       />
@@ -44,7 +44,7 @@ const Banner: FC = (): ReactElement => {
           src={T50}
           alt="logo"
           quality={100}
-          priority
+          loading="eager"
           className="img-t50"
           unoptimized
         />
