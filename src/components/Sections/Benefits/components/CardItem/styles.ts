@@ -42,13 +42,9 @@ export const Container = styled.div`
   }
 
   @media (max-width: 576px) {
-    width: 250px;
-    height: 230px;
-  }
-
-  @media (max-width: 576px) {
     width: 100%;
-    height: 260px;
+    height: auto;
+    padding: 70px 18px 32px 28px;
   }
 `;
 

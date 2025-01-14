@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { SwiperOptions } from "swiper/types";
 
 export interface SlideItem {
   src: StaticImageData;
@@ -8,6 +9,8 @@ export interface SlideItem {
   bgImage?: boolean;
 }
 
+export type Breakpoints = SwiperOptions["breakpoints"];
+
 export interface CarouselProps {
   slides: SlideItem[];
   spaceBetween?: number;
@@ -15,4 +18,5 @@ export interface CarouselProps {
   autoplayDelay?: number;
   loop?: boolean;
   textEmpty?: boolean;
+  breakpoints?: Breakpoints;
 }

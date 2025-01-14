@@ -5,9 +5,6 @@ import {
   T50IMG,
   Location1IMG,
   Location2IMG,
-  Location3IMG,
-  Location4IMG,
-  Location5IMG,
 } from "~/assets/images";
 import Carousel from "~/components/Carousel";
 import Popup from "~/components/Popup";
@@ -40,12 +37,6 @@ const droneSlides = [
     brand: "Suporte",
     emphasis: "Pós venda",
   },
-  {
-    src: T25IMG,
-    brand: "DRONE DJI",
-    model: "AGRAS",
-    emphasis: "T25",
-  },
 ];
 
 const anotherSlides = [
@@ -55,15 +46,6 @@ const anotherSlides = [
   {
     src: Location2IMG,
   },
-  {
-    src: Location5IMG,
-  },
-  {
-    src: Location3IMG,
-  },
-  {
-    src: Location4IMG,
-  },
 ];
 
 const pages: FC = (): ReactElement => {
@@ -71,7 +53,27 @@ const pages: FC = (): ReactElement => {
     <>
       <Banner />
 
-      <Carousel slides={droneSlides} />
+      <Carousel
+        slides={droneSlides}
+        breakpoints={{
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 4,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 14,
+          },
+        }}
+      />
 
       <Benefits />
 
@@ -82,6 +84,15 @@ const pages: FC = (): ReactElement => {
         slidesPerView={2}
         autoplayDelay={3000}
         textEmpty
+        breakpoints={{
+          200: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 8,
+          },
+        }}
       />
 
       <Footer />

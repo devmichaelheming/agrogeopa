@@ -36,6 +36,17 @@ const floatingMobileSmall = keyframes`
   }
 `;
 
+const slideDown = keyframes`
+  from {
+    transform: translateY(-100vh) translateX(-50%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+  }
+`;
+
 export const Banner = styled.div`
   position: relative;
   width: 100%;
@@ -178,6 +189,7 @@ export const ButtonWrapper = styled.div`
   bottom: 7vh;
   left: 34vh;
   transform: translateX(-50%);
+  animation: ${slideDown} 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @media (max-width: 1920px) {
     left: 38vh;

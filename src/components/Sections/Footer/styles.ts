@@ -120,6 +120,10 @@ export const ItemSection = styled.div`
     width: 100%;
     display: flex;
     column-gap: 16px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 
   svg {

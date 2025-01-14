@@ -64,3 +64,16 @@ strong {
 .swiper-button-prev, .swiper-button-next {
   color: #ffffffcc!important;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #008542;
+}

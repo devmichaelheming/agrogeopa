@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const CarouselContainer = styled.div`
   margin: 0 auto;
-  width: 96%;
+  width: 100%;
   padding-bottom: 20px;
 `;
 
 const Card = styled.div`
   position: relative;
   width: 100%;
-  height: 420px;
+  height: 480px;
   border-radius: 6px;
   overflow: hidden;
   display: flex;

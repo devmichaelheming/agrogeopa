@@ -23,6 +23,7 @@ const Carousel: FC<CarouselProps> = ({
   autoplayDelay = 2000,
   loop = true,
   textEmpty = false,
+  breakpoints,
 }): ReactElement => {
   return (
     <S.CarouselContainer>
@@ -39,27 +40,7 @@ const Carousel: FC<CarouselProps> = ({
         scrollbar={{ draggable: true }}
         grabCursor={true}
         loop={loop}
-        breakpoints={{
-          200: {
-            slidesPerView: 1,
-            spaceBetween: 4,
-          },
-
-          576: {
-            slidesPerView: 2,
-            spaceBetween: 8,
-          },
-
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 14,
-          },
-        }}
+        breakpoints={breakpoints}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>

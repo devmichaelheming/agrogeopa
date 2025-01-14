@@ -2,11 +2,8 @@ import AssistanceIMG from "./assistance.png";
 import BannerFullIMG from "./banner-full.png";
 import BannerMobileIMG from "./banner-mobile.png";
 import BannerTabletIMG from "./banner-tablet.png";
-import Location1IMG from "./location1.jpg";
-import Location2IMG from "./location2.jpg";
-import Location3IMG from "./location3.jpg";
-import Location4IMG from "./location4.jpg";
-import Location5IMG from "./location5.jpg";
+import Location1IMG from "./agrogeo-local1.jpeg";
+import Location2IMG from "./agrogeo-local2.jpeg";
 import LogoIMG from "./logo.png";
 import SojaWebIMG from "./soja-web.jpg";
 import SuportIMG from "./suport.png";
@@ -22,9 +19,6 @@ export {
   BannerTabletIMG,
   Location1IMG,
   Location2IMG,
-  Location3IMG,
-  Location4IMG,
-  Location5IMG,
   LogoIMG,
   SojaWebIMG,
   SuportIMG,
