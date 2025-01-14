@@ -5,6 +5,7 @@ import {
   T50IMG,
   Location1IMG,
   Location2IMG,
+  TrainingIMG,
 } from "~/assets/images";
 import Carousel from "~/components/Carousel";
 import Popup from "~/components/Popup";
@@ -36,6 +37,11 @@ const droneSlides = [
     src: SuportIMG,
     brand: "Suporte",
     emphasis: "Pós venda",
+  },
+  {
+    src: TrainingIMG,
+    brand: "Treinamento de",
+    emphasis: "Pilotos",
   },
 ];
 

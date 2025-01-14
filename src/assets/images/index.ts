@@ -3,12 +3,13 @@ import BannerFullIMG from "./banner-full.png";
 import BannerMobileIMG from "./banner-mobile.png";
 import BannerTabletIMG from "./banner-tablet.png";
 import Location1IMG from "./agrogeo-local1.jpeg";
-import Location2IMG from "./agrogeo-local2.jpeg";
+import Location2IMG from "./local.jpeg";
 import LogoIMG from "./logo.png";
 import SojaWebIMG from "./soja-web.jpg";
 import SuportIMG from "./suport.png";
 import T25IMG from "./T25.png";
 import T50IMG from "./T50.png";
+import TrainingIMG from "./training.jpg";
 
 export {
   T25IMG,
@@ -22,4 +23,5 @@ export {
   LogoIMG,
   SojaWebIMG,
   SuportIMG,
+  TrainingIMG,
 };

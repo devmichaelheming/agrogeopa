@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+export const slideDown = keyframes`
+  from {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   width: 60%;
@@ -63,7 +74,7 @@ export const SectionCards = styled.div`
   }
 `;
 
-export const ButtonAction = styled.button`
+export const ButtonAction = styled.button<{ isInView: boolean }>`
   border: none;
   background-color: rgb(2, 100, 51);
   width: 400px;
@@ -74,6 +85,12 @@ export const ButtonAction = styled.button`
   font-size: 1rem;
   transition: 0.3s ease;
   margin: 40px 0;
+
+  ${({ isInView }) =>
+    isInView &&
+    css`
+      animation: ${slideDown} 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    `};
 
   @media (max-width: 576px) {
     width: 100%;

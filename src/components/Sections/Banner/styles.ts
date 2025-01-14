@@ -189,7 +189,7 @@ export const ButtonWrapper = styled.div`
   bottom: 7vh;
   left: 34vh;
   transform: translateX(-50%);
-  animation: ${slideDown} 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: ${slideDown} 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @media (max-width: 1920px) {
     left: 38vh;

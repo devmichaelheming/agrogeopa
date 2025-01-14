@@ -61,6 +61,8 @@ const dataItensBenefits: Array<CardItemProps> = [
 ];
 
 const Benefits: FC = (): ReactElement => {
+  const refButton = useRef(null);
+  const isInViewButton = useInView(refButton);
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -103,7 +105,9 @@ const Benefits: FC = (): ReactElement => {
       </S.SectionCards>
 
       <Link passHref href={messageWhatsapp} target="_blank">
-        <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
+        <S.ButtonAction ref={refButton} isInView={isInViewButton}>
+          ADQUIRA AGORA SEU DRONE
+        </S.ButtonAction>
       </Link>
     </S.Container>
   );
