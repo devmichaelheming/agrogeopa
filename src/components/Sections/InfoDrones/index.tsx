@@ -6,8 +6,7 @@ import {
   SinalIMG,
   SprinkleIMG,
 } from "~/assets/icons";
-import T25IMG from "~/assets/images/T25.png";
-import T50IMG from "~/assets/images/T50.png";
+import { T25IMG, T50IMG } from "~/assets/images";
 import React, { FC, ReactElement } from "react";
 
 import ItemDrone from "./components/ItemDrone";

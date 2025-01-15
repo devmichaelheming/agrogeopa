@@ -1,5 +1,4 @@
 import AssistanceIMG from "./assistance.png";
-import BannerFullIMG from "./banner-full.png";
 import BannerMobileIMG from "./banner-mobile.png";
 import BannerTabletIMG from "./banner-tablet.png";
 import Location1IMG from "./agrogeo-local1.jpeg";
@@ -15,7 +14,6 @@ export {
   T25IMG,
   T50IMG,
   AssistanceIMG,
-  BannerFullIMG,
   BannerMobileIMG,
   BannerTabletIMG,
   Location1IMG,
