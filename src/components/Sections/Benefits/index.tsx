@@ -104,8 +104,8 @@ const Benefits: FC = (): ReactElement => {
         ))}
       </S.SectionCards>
 
-      <Link passHref href={messageWhatsapp} target="_blank">
-        <S.ButtonAction ref={refButton} isInView={isInViewButton}>
+      <Link passHref href={messageWhatsapp} target="_blank" ref={refButton}>
+        <S.ButtonAction isInView={isInViewButton}>
           ADQUIRA AGORA SEU DRONE
         </S.ButtonAction>
       </Link>
