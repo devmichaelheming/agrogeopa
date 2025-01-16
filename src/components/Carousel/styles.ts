@@ -10,7 +10,7 @@ const CarouselContainer = styled.div`
 const Card = styled.div`
   position: relative;
   width: 100%;
-  height: 480px;
+  height: 400px;
   border-radius: 6px;
   overflow: hidden;
   display: flex;

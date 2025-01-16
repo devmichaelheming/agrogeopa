@@ -6,7 +6,8 @@ import {
   SinalIMG,
   SprinkleIMG,
 } from "~/assets/icons";
-import { T25IMG, T50IMG } from "~/assets/images";
+import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
+import T25NoBackgroundIMG from "~/assets/images/T25-2.png";
 import React, { FC, ReactElement } from "react";
 
 import ItemDrone from "./components/ItemDrone";
@@ -16,7 +17,7 @@ import { DroneItemProps } from "./types";
 const dataMockDrones: Array<DroneItemProps> = [
   {
     title: "DJI AGRAS T25",
-    src: T25IMG,
+    src: T25NoBackgroundIMG,
     subtitle: "O DJI AGRAS T25 pode ser facilmente manuseado por uma pessoa.",
     description:
       "Pode transportar uma carga útil de pulverização até 20 kg ou uma carga útil de dispersão até 25 kg. O DJI AGRAS T25 está equipado com radares de matriz de fase dianteiro e traseiro, um sistema de visão binocular e uma câmera com estabilizador FPV de alta resolução. O DJI AGRAS T25 é compatível com várias missões, desde levantamento aéreo até pulverização e dispersão, e se destaca em uma variedade de terrenos.",
@@ -49,7 +50,7 @@ const dataMockDrones: Array<DroneItemProps> = [
   },
   {
     title: "DJI AGRAS T50",
-    src: T50IMG,
+    src: T50NoBackgroundIMG,
     subtitle:
       "Redefine os padrões para drones agrícolas compactos. Leve e ágil.",
     description:
