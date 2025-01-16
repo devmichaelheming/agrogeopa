@@ -6,6 +6,7 @@ import { messageWhatsapp } from "~/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC, ReactElement } from "react";
+import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
 
 import S from "./styles";
 
@@ -41,7 +42,7 @@ const Banner: FC = (): ReactElement => {
 
       <S.SectionDrone>
         <Image
-          src={T50}
+          src={T50NoBackgroundIMG}
           alt="logo"
           quality={100}
           loading="eager"
