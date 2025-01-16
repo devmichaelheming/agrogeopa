@@ -16,7 +16,7 @@ const Footer: FC = (): ReactElement => {
       <S.WrapperFooter>
         <S.SectionOne>
           <S.TitleSectionOne>
-            Maximize sua produção com a AGRO GEO DRONES,
+            Maximize sua produção com a AGROGEO DRONES,
             <span> e vença todos os desafios do campo.</span>
           </S.TitleSectionOne>
 

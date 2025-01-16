@@ -1,52 +1,16 @@
 import BannerIMG from "~/assets/images/banner-full.png";
-import BannerMobileIMG from "~/assets/images/banner-mobile.png";
-import BannerTabletIMG from "~/assets/images/banner-tablet.png";
-import T50 from "~/assets/images/T50.png";
+import BannerMobileIMG from "~/assets/images/banner-mobile2.png";
+import BannerTabletIMG from "~/assets/images/banner-tablet2.png";
 import { messageWhatsapp } from "~/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC, ReactElement, useEffect, useState } from "react";
+import React, { FC, ReactElement } from "react";
 import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
 
 import S from "./styles";
 import { BannerProps } from "./types";
 
 const Banner: FC<BannerProps> = ({ isLoaded, setIsLoaded }): ReactElement => {
-  const [isBannerLoaded, setIsBannerLoaded] = useState(false);
-
-  // useEffect(() => {
-  //   const images = [
-  //     BannerIMG.src,
-  //     BannerMobileIMG.src,
-  //     BannerTabletIMG.src,
-  //     T50NoBackgroundIMG.src,
-  //   ];
-
-  //   // Função para pré-carregar as imagens
-  //   const preloadImages = async () => {
-  //     const promises = images.map(
-  //       (src) =>
-  //         new Promise<void>((resolve, reject) => {
-  //           const img = new window.Image();
-  //           img.src = src;
-  //           img.onload = () => resolve();
-  //           img.onerror = () => reject(new Error(`Erro ao carregar ${src}`));
-  //         })
-  //     );
-
-  //     try {
-  //       await Promise.all(promises);
-  //       setIsLoaded(true);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-
-  //   preloadImages();
-  // }, []);
-
-  console.log("isLoaded", isLoaded);
-
   return (
     <S.Banner id="home">
       {!isLoaded && (
