@@ -271,9 +271,36 @@ export const ButtonAction = styled.button`
   }
 `;
 
+export const LoadingSpinner = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #000;
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #00d084;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
 export default {
   Banner,
   SectionDrone,
   ButtonWrapper,
   ButtonAction,
+  LoadingSpinner,
 };
