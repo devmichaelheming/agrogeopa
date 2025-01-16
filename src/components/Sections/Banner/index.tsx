@@ -1,4 +1,4 @@
-import BannerIMG from "~/assets/images/banner-full2.png";
+import BannerIMG from "~/assets/images/banner-full.png";
 import BannerMobileIMG from "~/assets/images/banner-mobile.png";
 import BannerTabletIMG from "~/assets/images/banner-tablet.png";
 import T50 from "~/assets/images/T50.png";

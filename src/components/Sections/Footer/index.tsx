@@ -16,13 +16,13 @@ const Footer: FC = (): ReactElement => {
       <S.WrapperFooter>
         <S.SectionOne>
           <S.TitleSectionOne>
-            Maximize sua produção com a AGRO GEO,
+            Maximize sua produção com a AGRO GEO DRONES,
             <span> e vença todos os desafios do campo.</span>
           </S.TitleSectionOne>
 
           <S.DescriptionSectionOne>
             Adquira já o seu com a melhor forma de pagamento e o melhor suporte
-            para o Mato Grosso.
+            para o Pará.
           </S.DescriptionSectionOne>
         </S.SectionOne>
 
@@ -83,7 +83,7 @@ const Footer: FC = (): ReactElement => {
 
       <S.SectionEnd>
         <span>
-          Copyright ©{currentYear} Todos Os Direitos Reservados - AGROGEO
+          Copyright ©{currentYear} Todos Os Direitos Reservados - AGROGEO DRONES
         </span>
       </S.SectionEnd>
     </S.Container>
