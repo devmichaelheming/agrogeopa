@@ -21,7 +21,6 @@ const ItemDrone: FC<ItemDroneProps> = ({ data }): ReactElement => {
           quality={100}
           loading="eager"
           className="img-logo"
-          unoptimized
         />
 
         <S.SubTitleSectionDrone>{data.subtitle}</S.SubTitleSectionDrone>

@@ -49,7 +49,9 @@ const Carousel: FC<CarouselProps> = ({
                 src={slide.src}
                 alt={slide.brand || `img-carousel-${index}`}
                 layout="responsive"
-                loading="eager"
+                loading="lazy"
+                priority={false}
+                placeholder="blur"
               />
               {!textEmpty && (
                 <S.SectionTitle>

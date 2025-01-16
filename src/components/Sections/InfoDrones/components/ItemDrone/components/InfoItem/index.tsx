@@ -18,7 +18,6 @@ const InfoItem: FC<InfoItemProps> = ({ icon, title }): ReactElement => {
           quality={100}
           loading="eager"
           className="img-item"
-          unoptimized
         />
       )}
       <S.Title>{title}</S.Title>

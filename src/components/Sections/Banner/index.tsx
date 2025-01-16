@@ -9,10 +9,9 @@ import React, { FC, ReactElement, useEffect, useState } from "react";
 import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
 
 import S from "./styles";
+import { BannerProps } from "./types";
 
-const Banner: FC = (): ReactElement => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
+const Banner: FC<BannerProps> = ({ isLoaded, setIsLoaded }): ReactElement => {
   useEffect(() => {
     const images = [
       BannerIMG.src,
@@ -52,28 +51,25 @@ const Banner: FC = (): ReactElement => {
             src={BannerIMG}
             alt="banner-full"
             quality={100}
-            loading="lazy"
+            loading="eager"
             className="img-banner"
             priority
-            unoptimized
           />
           <Image
             src={BannerTabletIMG}
             alt="banner-tablet"
             quality={100}
-            loading="lazy"
+            loading="eager"
             className="img-banner-tablet"
             priority
-            unoptimized
           />
           <Image
             src={BannerMobileIMG}
             alt="banner-mobile"
             quality={100}
-            loading="lazy"
+            loading="eager"
             className="img-banner-mobile"
             priority
-            unoptimized
           />
           <S.SectionDrone>
             <Image
@@ -82,7 +78,6 @@ const Banner: FC = (): ReactElement => {
               quality={100}
               loading="eager"
               className="img-t50"
-              unoptimized
             />
           </S.SectionDrone>
           <S.ButtonWrapper>

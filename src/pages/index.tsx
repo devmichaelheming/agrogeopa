@@ -13,7 +13,7 @@ import Banner from "~/components/Sections/Banner";
 import Benefits from "~/components/Sections/Benefits";
 import Footer from "~/components/Sections/Footer";
 import InfoDrones from "~/components/Sections/InfoDrones";
-import React, { FC, ReactElement } from "react";
+import React, { FC, ReactElement, useState } from "react";
 
 const droneSlides = [
   {
@@ -55,31 +55,35 @@ const anotherSlides = [
 ];
 
 const pages: FC = (): ReactElement => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <>
-      <Banner />
+      <Banner isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
 
-      <Carousel
-        slides={droneSlides}
-        breakpoints={{
-          200: {
-            slidesPerView: 1,
-            spaceBetween: 4,
-          },
-          576: {
-            slidesPerView: 2,
-            spaceBetween: 8,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 14,
-          },
-        }}
-      />
+      {!isLoaded && (
+        <Carousel
+          slides={droneSlides}
+          breakpoints={{
+            200: {
+              slidesPerView: 1,
+              spaceBetween: 4,
+            },
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 8,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 14,
+            },
+          }}
+        />
+      )}
 
       <Benefits />
 
