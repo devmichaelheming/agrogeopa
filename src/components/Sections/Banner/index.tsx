@@ -12,85 +12,88 @@ import S from "./styles";
 import { BannerProps } from "./types";
 
 const Banner: FC<BannerProps> = ({ isLoaded, setIsLoaded }): ReactElement => {
-  useEffect(() => {
-    const images = [
-      BannerIMG.src,
-      BannerMobileIMG.src,
-      BannerTabletIMG.src,
-      T50NoBackgroundIMG.src,
-    ];
+  const [isBannerLoaded, setIsBannerLoaded] = useState(false);
 
-    // Função para pré-carregar as imagens
-    const preloadImages = async () => {
-      const promises = images.map(
-        (src) =>
-          new Promise<void>((resolve, reject) => {
-            const img = new window.Image();
-            img.src = src;
-            img.onload = () => resolve();
-            img.onerror = () => reject(new Error(`Erro ao carregar ${src}`));
-          })
-      );
+  // useEffect(() => {
+  //   const images = [
+  //     BannerIMG.src,
+  //     BannerMobileIMG.src,
+  //     BannerTabletIMG.src,
+  //     T50NoBackgroundIMG.src,
+  //   ];
 
-      try {
-        await Promise.all(promises);
-        setIsLoaded(true);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+  //   // Função para pré-carregar as imagens
+  //   const preloadImages = async () => {
+  //     const promises = images.map(
+  //       (src) =>
+  //         new Promise<void>((resolve, reject) => {
+  //           const img = new window.Image();
+  //           img.src = src;
+  //           img.onload = () => resolve();
+  //           img.onerror = () => reject(new Error(`Erro ao carregar ${src}`));
+  //         })
+  //     );
 
-    preloadImages();
-  }, []);
+  //     try {
+  //       await Promise.all(promises);
+  //       setIsLoaded(true);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+
+  //   preloadImages();
+  // }, []);
+
+  console.log("isLoaded", isLoaded);
 
   return (
     <S.Banner id="home">
-      {isLoaded ? (
-        <>
-          <Image
-            src={BannerIMG}
-            alt="banner-full"
-            quality={100}
-            loading="eager"
-            className="img-banner"
-            priority
-          />
-          <Image
-            src={BannerTabletIMG}
-            alt="banner-tablet"
-            quality={100}
-            loading="eager"
-            className="img-banner-tablet"
-            priority
-          />
-          <Image
-            src={BannerMobileIMG}
-            alt="banner-mobile"
-            quality={100}
-            loading="eager"
-            className="img-banner-mobile"
-            priority
-          />
-          <S.SectionDrone>
-            <Image
-              src={T50NoBackgroundIMG}
-              alt="drone"
-              quality={100}
-              loading="eager"
-              className="img-t50"
-            />
-          </S.SectionDrone>
-          <S.ButtonWrapper>
-            <Link passHref href={messageWhatsapp} target="_blank">
-              <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
-            </Link>
-          </S.ButtonWrapper>
-        </>
-      ) : (
+      {!isLoaded && (
         <S.LoadingSpinner>
           <div className="spinner"></div>
         </S.LoadingSpinner>
       )}
+
+      <Image
+        src={BannerIMG}
+        alt="banner-full"
+        quality={100}
+        loading="eager"
+        className="img-banner"
+        onLoadingComplete={() => setIsLoaded(true)}
+        priority
+      />
+      <Image
+        src={BannerTabletIMG}
+        alt="banner-tablet"
+        quality={100}
+        loading="eager"
+        className="img-banner-tablet"
+        priority
+      />
+      <Image
+        src={BannerMobileIMG}
+        alt="banner-mobile"
+        quality={100}
+        loading="eager"
+        className="img-banner-mobile"
+        priority
+      />
+      <S.SectionDrone>
+        <Image
+          src={T50NoBackgroundIMG}
+          alt="drone"
+          quality={100}
+          loading="eager"
+          className="img-t50"
+        />
+      </S.SectionDrone>
+      <S.ButtonWrapper>
+        <Link passHref href={messageWhatsapp} target="_blank">
+          <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
+        </Link>
+      </S.ButtonWrapper>
     </S.Banner>
   );
 };

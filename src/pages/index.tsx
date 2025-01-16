@@ -61,7 +61,7 @@ const pages: FC = (): ReactElement => {
     <>
       <Banner isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
 
-      {!isLoaded && (
+      {isLoaded && (
         <Carousel
           slides={droneSlides}
           breakpoints={{

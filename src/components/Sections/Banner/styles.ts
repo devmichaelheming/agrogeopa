@@ -95,6 +95,7 @@ export const SectionDrone = styled.div`
   position: absolute;
   top: 20%;
   left: 45%;
+  z-index: 10;
 
   @media (max-width: 1600px) {
     left: 42%;
@@ -276,7 +277,10 @@ export const LoadingSpinner = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
   background: #000;
+  z-index: 20;
+  position: absolute;
 
   .spinner {
     width: 50px;
