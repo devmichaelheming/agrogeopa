@@ -52,24 +52,27 @@ const Banner: FC = (): ReactElement => {
             src={BannerIMG}
             alt="banner-full"
             quality={100}
-            loading="eager"
+            loading="lazy"
             className="img-banner"
+            priority
             unoptimized
           />
           <Image
             src={BannerTabletIMG}
             alt="banner-tablet"
             quality={100}
-            loading="eager"
+            loading="lazy"
             className="img-banner-tablet"
+            priority
             unoptimized
           />
           <Image
             src={BannerMobileIMG}
             alt="banner-mobile"
             quality={100}
-            loading="eager"
+            loading="lazy"
             className="img-banner-mobile"
+            priority
             unoptimized
           />
           <S.SectionDrone>
