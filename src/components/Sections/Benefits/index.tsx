@@ -17,6 +17,8 @@ import CardItem from "./components/CardItem";
 import { CardItemProps } from "./components/CardItem/types";
 import S from "./styles";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const LottieComponent = dynamic(() => import("react-lottie"), {
   ssr: false,
 });

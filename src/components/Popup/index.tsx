@@ -6,6 +6,8 @@ import React, { FC, ReactElement } from "react";
 
 import S from "./styles";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const LottieComponent = dynamic(() => import("react-lottie"), {
   ssr: false,
 });

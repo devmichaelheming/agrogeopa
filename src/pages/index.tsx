@@ -14,6 +14,7 @@ import Benefits from "~/components/Sections/Benefits";
 import Footer from "~/components/Sections/Footer";
 import InfoDrones from "~/components/Sections/InfoDrones";
 import React, { FC, ReactElement, useState } from "react";
+import Head from "next/head";
 
 const droneSlides = [
   {
@@ -59,6 +60,10 @@ const pages: FC = (): ReactElement => {
 
   return (
     <>
+      <Head>
+        <title>AGROGEO - DRONES</title>
+      </Head>
+
       <Banner isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
 
       {isLoaded && (
