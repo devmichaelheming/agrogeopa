@@ -1,7 +1,7 @@
 import BannerIMG from "~/assets/images/banner-full.png";
 import BannerMobileIMG from "~/assets/images/banner-mobile2.png";
 import BannerTabletIMG from "~/assets/images/banner-tablet2.png";
-import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
+import T100NoBackgroundIMG from "~/assets/images/T100-2.png";
 import { messageWhatsapp } from "~/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,7 +46,7 @@ const Banner: FC<BannerProps> = ({ isLoaded, setIsLoaded }): ReactElement => {
       />
       <S.SectionDrone>
         <Image
-          src={T50NoBackgroundIMG}
+          src={T100NoBackgroundIMG}
           alt="drone"
           quality={100}
           loading="eager"
