@@ -5,6 +5,7 @@ import {
   T50IMG,
   Location1IMG,
   Location2IMG,
+  Location3IMG,
   TrainingIMG,
   T100IMG,
   T25PIMG,
@@ -74,6 +75,9 @@ const anotherSlides = [
   {
     src: Location2IMG,
   },
+  {
+    src: Location3IMG,
+  },
 ];
 
 const pages: FC = (): ReactElement => {
@@ -117,15 +121,18 @@ const pages: FC = (): ReactElement => {
 
       <Carousel
         slides={anotherSlides}
-        slidesPerView={2}
+        slidesPerView={3}
         autoplayDelay={3000}
         textEmpty
         breakpoints={{
           200: {
             slidesPerView: 1,
           },
-          768: {
+          800: {
             slidesPerView: 2,
+          },
+          1240: {
+            slidesPerView: 3,
             spaceBetween: 8,
           },
         }}

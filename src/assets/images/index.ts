@@ -1,8 +1,9 @@
-import Location1IMG from "./agrogeo-local1.jpeg";
+import Location1IMG from "./agrogeo-local3.jpeg";
+import Location2IMG from "./agrogeo-local4.jpeg";
+import Location3IMG from "./agrogeo-local5.jpeg";
 import AssistanceIMG from "./assistance.png";
 import BannerMobileIMG from "./banner-mobile2.png";
 import BannerTabletIMG from "./banner-tablet2.png";
-import Location2IMG from "./local.jpeg";
 import LogoIMG from "./logo.png";
 import SojaWebIMG from "./soja-web.jpg";
 import SuportIMG from "./suport.png";
@@ -21,6 +22,7 @@ export {
   BannerTabletIMG,
   Location1IMG,
   Location2IMG,
+  Location3IMG,
   LogoIMG,
   SojaWebIMG,
   SuportIMG,
