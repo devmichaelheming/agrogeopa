@@ -25,37 +25,37 @@ const LottieComponent = dynamic(() => import("react-lottie"), {
 
 const dataItensBenefits: Array<CardItemProps> = [
   {
-    icon: <AimOutlined />,
+    icon: <AimOutlined aria-hidden="true" />,
     title: "Precisão máxima nas camadas mais baixas",
     description:
       "Os drones pulverizadores garantem uma cobertura 1,9 vez maior nas camadas mais baixas (próximas ao solo) da planta.",
   },
   {
-    icon: <LineChartOutlined />,
+    icon: <LineChartOutlined aria-hidden="true" />,
     title: "Redução do consumo de água",
     description:
       "A pulverização com drones reduz em até 90% o consumo de água.",
   },
   {
-    icon: <PercentageOutlined />,
+    icon: <PercentageOutlined aria-hidden="true" />,
     title: "ZERO de perdas por esmagamento",
     description:
       "As perdas por esmagamento causadas pelas rodas dos tratores são cerca de 5%. Em uma lavoura de soja com produção média de 60 sc/ha, isso significa 3sc/ha de perda.",
   },
   {
-    icon: <BarChartOutlined />,
+    icon: <BarChartOutlined aria-hidden="true" />,
     title: "Retorno sobre investimento",
     description:
       "Tecnologia que eleva a eficiência da pulverização e garante retorno de investimento.",
   },
   {
-    icon: <CheckCircleOutlined />,
+    icon: <CheckCircleOutlined aria-hidden="true" />,
     title: "Agilidade em qualquer terreno",
     description:
       "Caso a sua área tenha relevos acentuados, obstáculos, árvores e etc, o drone pode pulverizar sem problemas.",
   },
   {
-    icon: <SafetyOutlined />,
+    icon: <SafetyOutlined aria-hidden="true" />,
     title: "Segurança no trabalho",
     description:
       "Conduzir um drone pelo controle remoto é mais cômodo e seguro que utilizar um trator ao longo do campo.",
@@ -107,7 +107,10 @@ const Benefits: FC = (): ReactElement => {
       </S.SectionCards>
 
       <Link passHref href={messageWhatsapp} target="_blank" ref={refButton}>
-        <S.ButtonAction isInView={isInViewButton}>
+        <S.ButtonAction
+          isInView={isInViewButton}
+          aria-label="Botão adquirir drone"
+        >
           ADQUIRA AGORA SEU DRONE
         </S.ButtonAction>
       </Link>

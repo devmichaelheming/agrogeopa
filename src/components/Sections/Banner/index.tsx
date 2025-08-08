@@ -1,11 +1,11 @@
 import BannerIMG from "~/assets/images/banner-full.png";
 import BannerMobileIMG from "~/assets/images/banner-mobile2.png";
 import BannerTabletIMG from "~/assets/images/banner-tablet2.png";
+import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
 import { messageWhatsapp } from "~/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC, ReactElement } from "react";
-import T50NoBackgroundIMG from "~/assets/images/T50-2.png";
 
 import S from "./styles";
 import { BannerProps } from "./types";
@@ -53,7 +53,7 @@ const Banner: FC<BannerProps> = ({ isLoaded, setIsLoaded }): ReactElement => {
           className="img-t50"
         />
       </S.SectionDrone>
-      <S.ButtonWrapper>
+      <S.ButtonWrapper aria-label="Botão whatsapp">
         <Link passHref href={messageWhatsapp} target="_blank">
           <S.ButtonAction>ADQUIRA AGORA SEU DRONE</S.ButtonAction>
         </Link>

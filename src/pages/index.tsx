@@ -6,6 +6,9 @@ import {
   Location1IMG,
   Location2IMG,
   TrainingIMG,
+  T100IMG,
+  T25PIMG,
+  T70PIMG,
 } from "~/assets/images";
 import Carousel from "~/components/Carousel";
 import Popup from "~/components/Popup";
@@ -13,8 +16,8 @@ import Banner from "~/components/Sections/Banner";
 import Benefits from "~/components/Sections/Benefits";
 import Footer from "~/components/Sections/Footer";
 import InfoDrones from "~/components/Sections/InfoDrones";
-import React, { FC, ReactElement, useState } from "react";
 import Head from "next/head";
+import React, { FC, ReactElement, useState } from "react";
 
 const droneSlides = [
   {
@@ -40,9 +43,27 @@ const droneSlides = [
     emphasis: "Pós venda",
   },
   {
+    src: T100IMG,
+    brand: "DRONE DJI",
+    model: "AGRAS",
+    emphasis: "T100",
+  },
+  {
     src: TrainingIMG,
     brand: "Treinamento de",
     emphasis: "Pilotos",
+  },
+  {
+    src: T25PIMG,
+    brand: "DRONE DJI",
+    model: "AGRAS",
+    emphasis: "T25P",
+  },
+  {
+    src: T70PIMG,
+    brand: "DRONE DJI",
+    model: "AGRAS",
+    emphasis: "T70P",
   },
 ];
 
