@@ -125,8 +125,8 @@ export const SectionDrone = styled.div`
   }
 
   .img-t50 {
-    width: 520px;
-    height: 250px;
+    width: 580px;
+    height: 310px;
     object-fit: cover;
 
     @media (max-width: 1600px) {
